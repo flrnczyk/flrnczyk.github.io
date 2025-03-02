@@ -20,5 +20,5 @@ social: true # includes social icons at the bottom of the page
 ---
 
 <p align="justify">
-  Halo 👋🏻. I am a first-year PhD student <a href="https://ling.yale.edu">Yale Linguistics</a>. I am interested in syntax, phonology, semantics and their interfaces. I am especially interested in Koreanic languages.
+  Halo 👋🏻. I am a PhD student <a href="https://ling.yale.edu">Yale Linguistics</a>. I am interested in syntax and its interfaces with semantics and phonology. I am especially interested in Koreanic languages.
 </p>
