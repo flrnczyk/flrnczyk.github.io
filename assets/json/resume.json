@@ -1,8 +1,38 @@
 {
+  "basics": {
+    "name": "Florence Zhang-Yukun",
+    "label": "PhD Student",
+    "image": "",
+    "email": "florence.zhang@yale.edu",
+    "phone": "+1 203-668-5732",
+    "url": "https://flrnczyk.github.io",
+    "summary": "Phd Student at Yale Linguistics",
+    "location": {
+      "address": "370 Temple St",
+      "postalCode": "CT 06511",
+      "city": "New Haven",
+      "countryCode": "US",
+      "region": "Connecticut"
+    }
+  },
   "interests": [
     {
-      "name": "Broad: (Morpho) Syntax, Semantics, Syntax-Semantics Interface, Syntax-Phonology Interface",
-      "summary": "Narrow: 🔄Negation, 🫡Honorifics, 🈲Antihomophony, ↕️Comparatives, 🔁Reduplication"
+      "name": "Broad",
+      "keywords": [
+        "(Morpho) Syntax",
+        "Semantics",
+        "Syntax-Semantics Interface",
+        "Syntax-Phonology Interface"
+      ]
+    },
+    {
+      "name": "Narrow",
+      "keywords": [
+        "🔄Negation",
+        "🫡Honorifics",
+        "↕️Comparatives",
+        "🔁Reduplication"
+      ]
     }
   ]
 }
