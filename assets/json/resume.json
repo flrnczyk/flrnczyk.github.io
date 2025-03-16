@@ -3,19 +3,7 @@
     {
       "name": "Broad",
       "keywords": [
-        "(Morpho) Syntax",
-        "Semantics",
-        "Syntax-Semantics Interface",
-        "Syntax-Phonology Interface"
-      ]
-    },
-    {
-      "name": "Narrow",
-      "keywords": [
-        "🔄Negation",
-        "🫡Honorifics",
-        "↕️Comparatives",
-        "🔁Reduplication"
+          "(Morpho) Syntax"
       ]
     }
   ]
