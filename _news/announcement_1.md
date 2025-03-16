@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-01-01
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+I collaborated with graphic designer [Makoto Zhang](http://makoto491.github.io) on his zine <em>Reverse Waterfall</em>.

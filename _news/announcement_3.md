@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2024-05-31
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+[Linmin Zhang](https://sites.google.com/site/zhanglinmin/)'s and my manuscript [<em>Comparative Morphemes are Additive Particles: English -er/more vs. Chinese gèng</em>](https://lingbuzz.net/008122) is now on LingBuzz
