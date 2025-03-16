@@ -16,19 +16,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/cv/";
           },
-        },{id: "post-모래는-뭐래-독후감",
-      
-        title: "『모래는 뭐래』 독후감",
-      
-      description: "",
-      section: "Posts",
-      handler: () => {
-        
-          window.location.href = "/blog/2023/book/";
-        
-      },
-    },{id: "books-the-godfather",
-          title: 'The Godfather',
+        },{id: "books-모래는-뭐래",
+          title: '모래는 뭐래',
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
