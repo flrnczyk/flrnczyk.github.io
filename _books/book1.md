@@ -3,7 +3,7 @@ layout: book-review
 title: 모래는 뭐래
 author: 정끝별
 cover: assets/img/book1.jpg
-# olid: false # use Open Library ID to fetch cover (if no `cover` is provided)
+olid: false # use Open Library ID to fetch cover (if no `cover` is provided)
 isbn: 9788936424893 # use ISBN to fetch cover (if no `olid` is provided, dashes are optional)
 categories: poetry
 tags: top-100
@@ -12,7 +12,7 @@ started: 0000-00-00
 finished: 0000-00-00
 released: 2023
 stars: 5
-# goodreads_review: false
+goodreads_review: false
 status: Finished
 ---
 
