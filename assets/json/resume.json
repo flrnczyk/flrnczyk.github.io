@@ -2,7 +2,9 @@
   "interests": [
     {
       "name": "Broad",
-      "summary": "(Morpho) Syntax"
+      "keywords": [
+        "123"
+      ]
     }
   ]
 }
