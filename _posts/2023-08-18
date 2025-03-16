@@ -1,0 +1,17 @@
+---
+layout: post
+title: 『모래는 뭐래』 독후감
+date: 2023-08-18
+description: >
+tags: literature
+categories: books
+thumbnail: assets/img/book1.jpg
+---
+
+<p align="justify">
+   이 책이 내가 처음 읽은 한국어 시집이 아니지만, 다른 신선한 시각으로 한국어가 재미있음을 느끼게 처음 해준 것이다.
+</p>
+
+<div>
+  {% include figure.liquid path="assets/img/book1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+</div>
