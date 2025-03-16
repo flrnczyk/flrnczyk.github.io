@@ -16,9 +16,9 @@ profile:
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+social: false # includes social icons at the bottom of the page
 ---
 
 <p align="justify">
-  HalLo 👋🏻. I am a PhD student <a href="https://ling.yale.edu">Yale Linguistics</a>. I am interested in syntax and its interfaces with semantics and phonology. I am especially interested in Koreanic languages.
+  HalLo 👋🏻. I am a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>. I am interested in syntax and its interfaces with semantics and phonology. I am especially interested in Koreanic languages.
 </p>
