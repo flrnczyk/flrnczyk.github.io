@@ -1,7 +1,15 @@
 {
   "basics": {
     "name": "Florence Zhang-Yukun",
-    "label": "Phd Student"
+    "label": "Phd Student",
+    "url": "https://flrnczyk.github.io",
+    "summary": "a curious Phd student at Yale linguistics",
+    "location": {
+      "address": "370 Temple St",
+      "postalCode": "CT 06511",
+      "city": "New Haven",
+      "countryCode": "US"
+    }
   },
   "interests": [
     {
