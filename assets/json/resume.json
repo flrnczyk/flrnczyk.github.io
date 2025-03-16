@@ -1,10 +1,8 @@
 {
   "interests": [
     {
-      "name": "Broad: (Morpho) Syntax, Semantics, Syntax-Semantics Interface, Syntax-Phonology Interface",
-      "keywords": [
-        "123"
-      ]
+      "name": "Broad",
+      "summary": "(Morpho) Syntax"
     }
   ]
 }
