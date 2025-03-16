@@ -20,7 +20,7 @@ ninja.data = [{
           title: '모래는 뭐래',
           description: "",
           section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
+              window.location.href = "/books/book1/";
             },},{id: "news-i-collaborated-with-graphic-designer-makoto-zhang-on-his-zine-reverse-waterfall",
           title: 'I collaborated with graphic designer Makoto Zhang on his zine Reverse Waterfall.',
           description: "",
