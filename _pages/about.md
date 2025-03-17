@@ -25,3 +25,7 @@ social: false # includes social icons at the bottom of the page
 <p align="justify">
   Hallo 👋🏻. I am a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>. I am interested in syntax and its interfaces with semantics and phonology. I am especially interested in Koreanic languages.
 </p>
+
+<div class="footer">
+  This site is under construction and may occasionally be inaccessible or display irrelevant information.
+</div>
