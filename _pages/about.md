@@ -33,7 +33,7 @@ social: false # includes social icons at the bottom of the page
       width: 100%;
       text-align: center;
       font-size: 12px;
-      color: gray;
+      color: white;
   }
 </style>
 
