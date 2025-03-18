@@ -1,7 +1,4 @@
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: 🔄Negation
-    - title: 🫡Honorifics
-    - title: 🈲Antihomophony
-    - title: ↕️Comparatives
+    - title: {}
