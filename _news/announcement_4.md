@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Dingfan Lin and I will be presenting a poster on <em>Degree Reduplication</em> at <a href="https://glowlinguistics.org/47/" data-proofer-ignore>GLOW47</a>.
+Dingfan Lin and I will be presenting a poster on <em>Degree Reduplication</em> at <a href="https://glowlinguistics.org/47/">GLOW47</a>.
