@@ -24,3 +24,7 @@ social: false # includes social icons at the bottom of the page
 <p align="justify">
   Hallo 👋🏻. I am a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>. I am interested in syntax and its interfaces with semantics and phonology. I am especially interested in Koreanic languages.
 </p>
+
+<p align="justify">
+ recent presentations: WCCFL43 (<a href="https://flrnczyk.github.io/assets/pdf/conference/202504wccfl43_poster.pdf">Poster</a>), PLC49 (<a href="https://flrnczyk.github.io/assets/pdf/conference/202504plc49_slides.pdf">Slides</a>)
+</p>
