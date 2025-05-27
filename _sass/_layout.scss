@@ -45,7 +45,7 @@ body.sticky-bottom-footer {
   position: fixed;       /* or 'absolute' if you want it to scroll with page */
   top: 10px;
   right: 10px;
-  width: 150px;          /* adjust size as needed */
+  width: 10px;          /* adjust size as needed */
   height: auto;
   z-index: 9999;         /* make sure it appears on top */
 }
