@@ -44,7 +44,7 @@ body.sticky-bottom-footer {
 .clustrmap-container {
   position: fixed;       /* or 'absolute' if you want it to scroll with page */
   top: 10px;
-  right: 10px;
+  left: 10px;
   width: 10px;          /* adjust size as needed */
   height: auto;
   z-index: 9999;         /* make sure it appears on top */
