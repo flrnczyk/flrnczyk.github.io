@@ -4,7 +4,7 @@
     "url": "https://flrnczyk.github.io",
     "summary": "Phd student at Yale Linguistics",
     "location": {
-      "address": "370 Temple St",
+      "address": "37 Hillhouse Ave",
       "postalCode": "CT 06511",
       "city": "New Haven",
       "countryCode": "US"
@@ -13,7 +13,7 @@
   "interests": [
     {
       "name": "Broad",
-      "keywords": ["(Morpho) Syntax", "Semantics", "Syntax-Semantics Interface", "Syntax-Phonology Interface", "Formalisation"]
+      "keywords": ["(Morpho) Syntax", "Syntax-Semantics Interface", "Syntax-Phonology Interface", "Formalisation"]
     },
     {
       "name": "Narrow",
