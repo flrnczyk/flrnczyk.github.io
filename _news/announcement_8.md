@@ -8,4 +8,4 @@ related_posts: false
 {% assign cutoff = '2025-08-17' | date: '%s' %}
 {% assign today  = 'now' | date: '%s' %}
 
-I did a poster on the pejorative suffix <i>-lǎo</i>(佬) in Mandarin at <a ref="https://sites.google.com/view/sicogg27/">SICOGG27</a>. <a href="https://dx.doi.org/10.5281/zenodo.17768639" class="fancy-btn">Poster</a>
+I did a poster on the pejorative suffix <i>-lǎo</i>(佬) in Mandarin at <a ref="https://sites.google.com/view/sicogg27/">SICOGG27</a>. [<a href="https://dx.doi.org/10.5281/zenodo.17768639">Poster</a>]
