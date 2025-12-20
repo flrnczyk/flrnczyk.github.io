@@ -8,7 +8,7 @@ subtitle: >
 
 profile:
   align: right
-  image: my_pic.jpg
+  image: 1.svg
   image_circular: false # crops the image to make it circular
   more_info: 
 
