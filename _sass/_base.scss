@@ -1423,3 +1423,40 @@ figure.cover {
     color: #23212d !important;
   }
 }
+
+
+
+.fancy-btn {
+    position: relative;
+    color: var(--global-theme-color);
+    text-decoration: none;
+    padding-bottom: 4px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--global-theme-color);
+        transition: width 0.3s ease;
+    }
+
+    &:hover,
+    &:focus {
+        color: darken(var(--global-theme-color), 15%);
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    &:hover,
+    &:focus {
+        box-shadow: 0 0 0 4px rgba(var(--global-theme-color-rgb), 0.25);
+        outline: none;
+    }
+}
