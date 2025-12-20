@@ -27,5 +27,5 @@ social: false # includes social icons at the bottom of the page
 
 
 <p align="justify">
-  I am currently a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>, with a focus on syntax and an occasion interest in syntax's interfaces with semantics and phonology. Languagewise, I am interested in Chinese langauges and Koreanic languages.
+  I am currently a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>, with a focus on syntax and an occasional interest in syntax's interfaces with semantics and phonology. Languagewise, I am interested in Chinese langauges and Koreanic languages.
 </p>
