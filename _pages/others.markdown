@@ -5,7 +5,7 @@ permalink: /others/
 ---
 
 <div id="everything">
-<p></p>
+<p>T</p>
 <div>
 
 <script src="{{ '/assets/js/canvas.js' | relative_url }}"></script>
