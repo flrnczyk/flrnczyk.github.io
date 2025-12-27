@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # 每次 push 到 main 時觸發
+      - main
 
 permissions:
   contents: read
@@ -20,8 +20,8 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'  # Jekyll 常用版本，可改成 3.1 或 3.3
-          bundler-cache: true  # 自動快取 gems
+          ruby-version: '3.2'
+          bundler-cache: true
 
       - name: Install dependencies
         run: bundle install
