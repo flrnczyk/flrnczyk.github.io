@@ -1,11 +1,13 @@
 ---
-layout: cv
+layout: page
 permalink: /cv/
 title: cv
+description:
 nav: true
 nav_order: 1
-cv_pdf: cv.pdf # you can also use external links here
-description: 📄
-toc:
-  sidebar: left
+description: cv
 ---
+
+<div>
+  You can find my cv <a ref="https://flrnczyk.github.io/assets/pdf/cv.pdf">here</a>.
+</div>
