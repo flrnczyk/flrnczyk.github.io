@@ -2,8 +2,8 @@
   --text-col: #181818;
   --bg-col: #e5e5e5;
   --link-col: #0c2bf5;
-  --link-press-col: #07519f;
   --shadow-col: #b9b9b9;
+  --red-col: #FF0000;
 }
 
 
@@ -62,7 +62,7 @@ main a {
 
 
 main a:hover, main a:focus {
-  color: #FF0000;
+  color: var(--red-col);
   text-decoration: underline;
 }
 
@@ -156,18 +156,19 @@ main a.button-link {
   border-radius: 0px;
   font-size: 0.7em;
   transition: all 0.2s ease;
-  box-shadow: 0 2px 0 var(--link-press-col);
+  box-shadow: 0 2px 0 color-mix(in srgb, var(--link-col) 80%, black 20%);
   position: relative;
 }
 
 main a.button-link:hover {
-  background-color: var(--link-press-col);
-  box-shadow: 0 2px 0 color-mix(in srgb, var(--link-press-col) 80%, black 20%);
+  background-color: var(--red-col);
+  box-shadow: 0 2px 0 color-mix(in srgb, var(--red-col) 80%, black 20%);
 }
 
 main a.button-link:active {
   transform: translateY(2px);
-  box-shadow: var(--link-press-col);
+  box-shadow: var(--red-col);
+  color: var(--red-col);
 }
 
 
