@@ -178,12 +178,7 @@ main a.button-link:active {
 
 
 .clustrmap-container {
-  position: fixed;
-  top: -10px;
-  left: -10px;
-  width: 10px;
-  height: auto;
-  z-index: 9999;
+  display: none
 }
 
 
