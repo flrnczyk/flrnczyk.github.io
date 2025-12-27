@@ -55,6 +55,11 @@ body {
   padding-bottom: 5px;
 }
 
+/*所有pjustify*/
+p {
+    text-align: justify;
+}
+
 main a {
   color: var(--link-col);
   text-decoration: none;
