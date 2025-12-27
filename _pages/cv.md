@@ -9,5 +9,5 @@ description: cv
 ---
 
 <div>
-  You can find my cv <a ref="https://flrnczyk.github.io/assets/pdf/cv.pdf">here</a>.
+  You can find my cv <a href="https://flrnczyk.github.io/assets/pdf/cv.pdf">here</a>.
 </div>
