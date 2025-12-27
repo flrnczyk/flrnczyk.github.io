@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     everything.appendChild(canvas);
     // some hotfixes... ( ≖_≖)
     // document.body.style.margin = 0;
+    canvas.style.marginTop = "-5%";
     canvas.style.position = 'absolute';
     canvas.style.zIndex = -1;
 
