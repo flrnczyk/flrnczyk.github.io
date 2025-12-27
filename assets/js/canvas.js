@@ -40,8 +40,39 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     function randomcolor() {
-        return "hsl(" + Math.random() * 360 + ",100%,50%)";
-        }
+        const palettes = [
+            // red
+            { h: [350, 360], s: [80, 100], l: [45, 55] },
+            { h: [0, 20],    s: [80, 100], l: [45, 55] },
+
+            // pink
+            { h: [300, 330], s: [50, 80],  l: [65, 80] },
+
+            // purp
+            { h: [260, 290], s: [60, 90],  l: [45, 60] },
+
+            // blue
+            { h: [200, 240], s: [60, 90],  l: [45, 60] },
+
+            // gray
+            { h: [0, 360],   s: [0, 10],   l: [30, 70] },
+
+            // black
+            { h: [0, 360],   s: [0, 10],   l: [0, 15] }
+        ];
+
+        const p = palettes[Math.floor(Math.random() * palettes.length)];
+
+        const h = rand(p.h[0], p.h[1]);
+        const s = rand(p.s[0], p.s[1]);
+        const l = rand(p.l[0], p.l[1]);
+
+        return `hsl(${h}, ${s}%, ${l}%)`;
+    }
+
+    function rand(min, max) {
+        return Math.random() * (max - min) + min;
+    }
 
 
     function draw(e) {
