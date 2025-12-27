@@ -8,8 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     everything.appendChild(canvas);
     // some hotfixes... ( ≖_≖)
     // document.body.style.margin = 0;
-    canvas.style.marginTop = "-5%";
-    canvas.style.marginLeft = "0%";
     canvas.style.position = 'absolute';
     canvas.style.zIndex = -1;
 
@@ -34,8 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // resize canvas
     function resize() {
-        ctx.canvas.width = window.innerWidth;
-        ctx.canvas.height = window.innerHeight;
+        ctx.canvas.width = window.innerWidth * 1.2;
+        ctx.canvas.height = window.innerHeight * 1.2;
     }
 
 
