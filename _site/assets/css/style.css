@@ -249,25 +249,35 @@ main a.button-link:active {
   max-width: 800px;
   padding: 0 20px;
   justify-content: center;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+
+.bookshelf::after {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: 20px;
+  height: 20px;
+  background: var(--shadow-col);
+  z-index: -1;
 }
 
 @media (max-width: 768px) {
   .bookshelf {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 20px;
+    padding-bottom: 40px;
+  }
+  .bookshelf::after {
+    left: 5%;
+    right: 5%;
+    bottom: 15px;
   }
 }
 
-.bookshelf::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 340px;
-  height: 20px;
-  background: var(--shadow-col);
-  z-index: -1;
-}
 
 .book {
   display: flex;

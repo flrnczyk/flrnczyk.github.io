@@ -5,7 +5,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const savedTheme = localStorage.getItem('theme') || 'system';
   applyTheme(savedTheme);
 
-  toggle.addEventListener('click', () => {
+
+  function toggleTheme(e) {
+    e.preventDefault();
+
     let current = localStorage.getItem('theme') || 'system';
     let next;
     if (current === 'system') next = 'dark';
@@ -14,7 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     applyTheme(next);
     localStorage.setItem('theme', next);
-  });
+  }
+  
+  toggle.addEventListener('click', toggleTheme);
+
+  // mobile
+  toggle.addEventListener('touchstart', toggleTheme);
 
   function applyTheme(theme) {
     if (theme === 'dark') {
@@ -23,16 +31,15 @@ document.addEventListener('DOMContentLoaded', function () {
     } else if (theme === 'light') {
       html.classList.remove('dark');
       html.removeAttribute('data-theme');
-    } else { // system
+    } else {
       html.classList.remove('dark');
       html.setAttribute('data-theme', 'system');
-      
-      
+
       if (window.matchMedia) {
         const media = window.matchMedia('(prefers-color-scheme: dark)');
         if (media.matches) html.classList.add('dark');
         else html.classList.remove('dark');
-        
+
         media.addEventListener('change', e => {
           if (e.matches) html.classList.add('dark');
           else html.classList.remove('dark');
