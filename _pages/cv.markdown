@@ -5,5 +5,12 @@ permalink: /cv/
 ---
 
 <div>
-<p>You can access my cv <a href="https://flrnczyk.github.io/assets/pdf/cv.pdf">here</a>.</p>
+<p>You can access my cv here.</p>
 </div>
+
+<iframe
+  src="/assets/pdf/cv.pdf"
+  width="100%"
+  height="800"
+  style="border: none;"
+></iframe>

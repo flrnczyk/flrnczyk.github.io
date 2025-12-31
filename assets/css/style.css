@@ -248,13 +248,17 @@ main a.button-link:active {
 
 
 .mobile-bookshelf {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
   margin: 4rem auto;
   max-width: 900px;
   padding: 0 20px;
+}
+
+.mobile-bookshelf {
+  display: none;
 }
 
 @media (max-width: 768px) {
