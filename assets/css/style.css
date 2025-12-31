@@ -249,6 +249,12 @@ main a.button-link:active {
 
 .mobile-bookshelf {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin: 4rem auto;
+  max-width: 900px;
+  padding: 0 20px;
 }
 
 @media (max-width: 768px) {
@@ -258,9 +264,6 @@ main a.button-link:active {
 
   .mobile-bookshelf {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
   }
 }
 
