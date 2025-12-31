@@ -7,13 +7,7 @@
   --red-col: #ff0000;
 }
 
-.light{
-  --text-col: #181818;
-  --bg-col: #e5e5e5;
-  --link-col: #0c2bf5;
-  --shadow-col: #b9b9b9;
-  --red-col: #ff0000;
-}
+
 
 .dark {
   --text-col: #e5e5e5;
@@ -21,16 +15,6 @@
   --link-col: #0cc6f5;
   --shadow-col: #b9b9b9;
   --red-col: #ff0059;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not(.dark):not(.light) {
-    --text-col: #e5e5e5;
-    --bg-col: #181818;
-    --link-col: #0cc6f5;
-    --shadow-col: #b9b9b9;
-    --red-col: #ff0059;
-  }
 }
 
 /*總體顏色設定*/
@@ -116,33 +100,19 @@ html.no-transition {
   transition: opacity 0.3s ease;
 }
 
-#theme-toggle .yin,
-#theme-toggle .yang,
-#theme-toggle .system {
+theme-toggle .yang,
+#theme-toggle .yin {
   position: absolute;
   transition: opacity 0.3s ease;
 }
 
 
-#theme-toggle .system { opacity: 1; }
-#theme-toggle .yin,
-#theme-toggle .yang { opacity: 0; }
+#theme-toggle .yang { opacity: 1; }
+#theme-toggle .yin { opacity: 0; }
 
 
-html[data-theme="dark"] #theme-toggle .yin { opacity: 1; }
-html[data-theme="dark"] #theme-toggle .yang,
-html[data-theme="dark"] #theme-toggle .system { opacity: 0; }
-
-
-html[data-theme="light"] #theme-toggle .yang { opacity: 1; }
-html[data-theme="light"] #theme-toggle .yin,
-html[data-theme="light"] #theme-toggle .system { opacity: 0; }
-
-
-html[data-theme="system"] #theme-toggle .system { opacity: 1; }
-html[data-theme="system"] #theme-toggle .yin,
-html[data-theme="system"] #theme-toggle .yang { opacity: 0; }
-
+.dark #theme-toggle .yin { opacity: 1; }
+.dark #theme-toggle .yang { opacity: 0; }
 
 
 /*所有pjustify*/
@@ -312,16 +282,6 @@ main a.button-link:active {
 
 
 
-@media (max-width: 768px) {
-  .book-row {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-  .book-row::after {
-    left: 2%;
-    right: 2%;
-  }
-}
 
 
 
