@@ -7,14 +7,12 @@
   --red-col: #ff0000;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text-col: #e5e5e5;
-    --bg-col: #181818;
-    --link-col: #0cc6f5;
-    --shadow-col: #b9b9b9;
-    --red-col: #ff0059;
-  }
+.light{
+  --text-col: #181818;
+  --bg-col: #e5e5e5;
+  --link-col: #0c2bf5;
+  --shadow-col: #b9b9b9;
+  --red-col: #ff0000;
 }
 
 .dark {
@@ -25,8 +23,18 @@
   --red-col: #ff0059;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root:not(.dark):not(.light) {
+    --text-col: #e5e5e5;
+    --bg-col: #181818;
+    --link-col: #0cc6f5;
+    --shadow-col: #b9b9b9;
+    --red-col: #ff0059;
+  }
+}
+
 /*總體顏色設定*/
-body {
+html {
   margin: 0;
   font-family: "Noto Sans TC", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
@@ -36,6 +44,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+html.no-transition {
+  transition: none !important;
 }
 
 /*header navigation bar*/
@@ -105,17 +117,31 @@ body {
 }
 
 #theme-toggle .yin,
+#theme-toggle .yang,
 #theme-toggle .system {
-  opacity: 0;
+  position: absolute;
+  transition: opacity 0.3s ease;
 }
 
-.dark #theme-toggle .yang { opacity: 0; }
-.dark #theme-toggle .yin { opacity: 1; }
 
-[data-theme="system"] #theme-toggle .yang,
-[data-theme="system"] #theme-toggle .yin { opacity: 0; }
-[data-theme="system"] #theme-toggle .system { opacity: 1; }
+#theme-toggle .system { opacity: 1; }
+#theme-toggle .yin,
+#theme-toggle .yang { opacity: 0; }
 
+
+html[data-theme="dark"] #theme-toggle .yin { opacity: 1; }
+html[data-theme="dark"] #theme-toggle .yang,
+html[data-theme="dark"] #theme-toggle .system { opacity: 0; }
+
+
+html[data-theme="light"] #theme-toggle .yang { opacity: 1; }
+html[data-theme="light"] #theme-toggle .yin,
+html[data-theme="light"] #theme-toggle .system { opacity: 0; }
+
+
+html[data-theme="system"] #theme-toggle .system { opacity: 1; }
+html[data-theme="system"] #theme-toggle .yin,
+html[data-theme="system"] #theme-toggle .yang { opacity: 0; }
 
 
 
@@ -242,54 +268,59 @@ main a.button-link:active {
 
 /*books*/
 .bookshelf {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
   margin: 4rem auto;
-  max-width: 800px;
+  max-width: 900px;
   padding: 0 20px;
-  justify-content: center;
-  position: relative;
-  padding-bottom: 50px;
 }
 
+.book-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 40px;
+}
 
-.bookshelf::after {
+.book-row::after {
   content: '';
   position: absolute;
-  left: 10%;
-  right: 10%;
-  bottom: 20px;
+  left: 5%;
+  right: 5%;
+  bottom: 10px; 
   height: 20px;
   background: var(--shadow-col);
   z-index: -1;
 }
 
-@media (max-width: 768px) {
-  .bookshelf {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-    padding-bottom: 40px;
-  }
-  .bookshelf::after {
-    left: 5%;
-    right: 5%;
-    bottom: 15px;
-  }
-}
-
-
 .book {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  height: 220px;
 }
 
 .book img {
   width: 120px;
   height: 180px;
-  display: block;
-  transition: transform 0.3s ease;
+}
+
+
+
+@media (max-width: 768px) {
+  .book-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .book-row::after {
+    left: 2%;
+    right: 2%;
+  }
 }
 
 

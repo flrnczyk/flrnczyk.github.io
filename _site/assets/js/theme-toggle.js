@@ -1,50 +1,67 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const toggle = document.getElementById('theme-toggle');
   const html = document.documentElement;
+  const toggle = document.getElementById('theme-toggle');
 
-  const savedTheme = localStorage.getItem('theme') || 'system';
-  applyTheme(savedTheme);
+  
+  html.classList.add('no-transition');
 
+  
+  let userChoice = localStorage.getItem('theme') || 'system';
+  applyTheme(userChoice);
 
-  function toggleTheme(e) {
+  
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      html.classList.remove('no-transition');
+    });
+  });
+
+  
+  function handleToggle(e) {
     e.preventDefault();
 
-    let current = localStorage.getItem('theme') || 'system';
-    let next;
-    if (current === 'system') next = 'dark';
-    else if (current === 'dark') next = 'light';
-    else next = 'system';
+    if (userChoice === 'system') userChoice = 'dark';
+    else if (userChoice === 'dark') userChoice = 'light';
+    else userChoice = 'system';
 
-    applyTheme(next);
-    localStorage.setItem('theme', next);
+    localStorage.setItem('theme', userChoice);
+    applyTheme(userChoice);
   }
+
+  toggle.addEventListener('click', handleToggle);
+  toggle.addEventListener('touchstart', handleToggle, { passive: false });
+
   
-  toggle.addEventListener('click', toggleTheme);
+  function applyTheme(choice) {
+    
+    html.classList.remove('dark');
+    html.removeAttribute('data-theme');
 
-  // mobile
-  toggle.addEventListener('touchstart', toggleTheme);
+    
+    html.setAttribute('data-theme', choice);
 
-  function applyTheme(theme) {
-    if (theme === 'dark') {
+    
+    if (choice === 'dark') {
       html.classList.add('dark');
-      html.removeAttribute('data-theme');
-    } else if (theme === 'light') {
-      html.classList.remove('dark');
-      html.removeAttribute('data-theme');
+    } else if (choice === 'light') {
+      
     } else {
-      html.classList.remove('dark');
-      html.setAttribute('data-theme', 'system');
-
-      if (window.matchMedia) {
-        const media = window.matchMedia('(prefers-color-scheme: dark)');
-        if (media.matches) html.classList.add('dark');
-        else html.classList.remove('dark');
-
-        media.addEventListener('change', e => {
-          if (e.matches) html.classList.add('dark');
-          else html.classList.remove('dark');
-        });
+      
+      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      if (isDark) {
+        html.classList.add('dark');
       }
     }
   }
+
+  
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+    if (localStorage.getItem('theme') === 'system' || !localStorage.getItem('theme')) {
+      if (e.matches) {
+        html.classList.add('dark');
+      } else {
+        html.classList.remove('dark');
+      }
+    }
+  });
 });
