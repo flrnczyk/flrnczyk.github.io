@@ -246,6 +246,21 @@ main a.button-link:active {
   padding: 0 20px;
 }
 
+
+.mobile-bookshelf {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .bookshelf {
+    display: none;
+  }
+
+  .mobile-bookshelf {
+    display: flex;
+  }
+}
+
 .book-row {
   position: relative;
   display: grid;
@@ -254,6 +269,12 @@ main a.button-link:active {
   width: 100%;
   justify-content: center;
   padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  .book-row{
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .book-row::after {
@@ -282,7 +303,30 @@ main a.button-link:active {
 
 
 
+.book-meta {
+  position: absolute;
+  bottom: 100%;
+  margin-bottom: -10px;
+  padding: 6px 10px;
+  background-color: var(--text-col);
+  color: var(--bg-col);
+  font-size: 0.8rem;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
 
+.book:hover .book-meta {
+  opacity: 1;
+}
+
+
+.book-title::before {
+  content: '«';
+}
+.book-title::after {
+  content: '»';
+}
 
 .clustrmap-container {
   display: none
