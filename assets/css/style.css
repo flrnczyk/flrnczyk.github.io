@@ -24,15 +24,11 @@ html {
   line-height: 1.6;
   color: var(--text-col);
   background-color: var(--bg-col);
-  transition: background-color 0.3s, color 0.3s;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-html.no-transition {
-  transition: none !important;
-}
 
 /*header navigation bar*/
 .site-nav {
@@ -58,7 +54,7 @@ html.no-transition {
   font-weight: 500;
   margin: 0 30px;   /* distance between links */
   padding: 8px 0;
-  transition: color 0.3s ease;
+  /*transition: color 0.3s ease;*/
 }
 
 .site-nav a:hover {
@@ -88,7 +84,7 @@ html.no-transition {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  /*transition: all 0.3s ease;*/
 }
 
 #theme-toggle:hover {
@@ -97,13 +93,13 @@ html.no-transition {
 
 #theme-toggle .icon {
   position: absolute;
-  transition: opacity 0.3s ease;
+  /*transition: opacity 0.3s ease;*/
 }
 
 theme-toggle .yang,
 #theme-toggle .yin {
   position: absolute;
-  transition: opacity 0.3s ease;
+  /*transition: opacity 0.3s ease;*/
 }
 
 
@@ -114,6 +110,9 @@ theme-toggle .yang,
 .dark #theme-toggle .yin { opacity: 1; }
 .dark #theme-toggle .yang { opacity: 0; }
 
+.dark .profile-img {
+  filter: invert(1) hue-rotate(180deg);
+}
 
 /*所有pjustify*/
 p {
@@ -129,7 +128,7 @@ main a {
 main a:hover, main a:focus {
   color: var(--red-col);
   text-decoration: underline;
-  transition: color 0.3s ease;
+  /*transition: color 0.3s ease;*/
 }
 
 
@@ -220,7 +219,7 @@ main a.button-link {
   text-decoration: none; 
   border-radius: 0px;
   font-size: 0.7em;
-  transition: all 0.3s ease;
+  /*transition: all 0.3s ease;*/
   box-shadow: 0 2px 0 color-mix(in srgb, var(--link-col) 80%, black 20%);
   position: relative;
 }

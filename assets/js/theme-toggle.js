@@ -3,20 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const toggle = document.getElementById('theme-toggle');
 
   
-  html.classList.add('loading');
-
+  
   
   const isDark = localStorage.getItem('theme') === 'dark';
   if (isDark) {
     html.classList.add('dark');
   }
-
-  
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      html.classList.remove('loading');
-    });
-  });
 
   
   function handleToggle(e) {
