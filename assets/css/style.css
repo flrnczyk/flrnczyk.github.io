@@ -258,6 +258,9 @@ main a.button-link:active {
 
   .mobile-bookshelf {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
   }
 }
 
