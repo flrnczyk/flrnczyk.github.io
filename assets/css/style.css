@@ -156,6 +156,9 @@ main a:hover, main a:focus {
 }
 
 
+.mobile-cv {
+  display: none;
+}
 
 
 
@@ -175,6 +178,13 @@ main a:hover, main a:focus {
 
   .home-content h1 {
     font-size: 28px;
+  }
+  .cv-iframe {
+    display: none;
+  } /* hide cv ifframe on phones */
+
+  .mobile-cv {
+    display: block;
   }
 }
 
