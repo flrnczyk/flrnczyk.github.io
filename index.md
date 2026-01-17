@@ -13,7 +13,9 @@ title: Home
       Hallo 👋🏻.
     </p>
     <p align="justify">
-      I am currently a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>, with a focus on syntax and an occasional interest in syntax's interfaces with semantics and phonology. Languagewise, I am interested in Chinese langauges and Koreanic languages.
+      I am currently a PhD student at <a href="https://ling.yale.edu">Yale Linguistics</a>, with a focus on syntax and an occasional interest in syntax's interfaces with semantics and phonology.<br>
+      Topics that I have looked into or been thinkg about include negation, reduplication and comparative. Languagewise, I am interested in Chinese langauges and Koreanic languages.<br>
+      I am also curious about the meaning of mathematics and the meaning of programming languages.
     </p>
   </div>
 
