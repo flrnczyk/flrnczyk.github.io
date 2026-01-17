@@ -6,7 +6,7 @@ permalink: /others/
 
 
 
-<p>These are some books I recommend.</p>
+<p>In my spare time, I enjoy reading texts. These are some books I recommend.</p>
 <div class="bookshelf">
   {% assign books = site.data.books %}
 
@@ -55,5 +55,7 @@ permalink: /others/
     {% endif %}
   {% endfor %}
 </div>
+
+<p>I am huge fan of messing around with LaTeX. See <a ref="https://flrnczyk.github.io/assets/pdf/cv.pdf">this pdf</a>.</p>
 
 <script src="{{ '/assets/js/canvas.js' | relative_url }}"></script>
