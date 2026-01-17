@@ -56,6 +56,6 @@ permalink: /others/
   {% endfor %}
 </div>
 
-<p>I am huge fan of messing around with LaTeX. See <a ref="https://flrnczyk.github.io/assets/pdf/sample.pdf">this pdf</a>.</p>
+<p>I am huge fan of messing around with LaTeX. See <a href="https://flrnczyk.github.io/assets/pdf/sample.pdf">this pdf</a>.</p>
 
 <script src="{{ '/assets/js/canvas.js' | relative_url }}"></script>
