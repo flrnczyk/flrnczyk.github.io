@@ -5,7 +5,7 @@ permalink: /cv/
 ---
 
 <div class="mobile-cv">
-<p>You can access my cv <a ref="https://flrnczyk.github.io/assets/pdf/cv.pdf">here</a>.</p>
+<p>You can access my cv <a href="https://flrnczyk.github.io/assets/pdf/cv.pdf">here</a>.</p>
 </div>
 
 <iframe
