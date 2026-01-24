@@ -1,1 +1,1 @@
-<div>Academic Website of Florence Zhang-Yukun</div>
+<div>Personal Website of Florence Zhang-Yukun</div>
