@@ -1,6 +1,5 @@
----
 layout: post
-date: 2026-05-01
+date: 2026-01-29
 ---
 
-Our <a ref="http://glowlinguistics.org/47/" >GLOW47</a> proceedings paper on Mandarin degree reduplication is now out. <a href="https://dx.doi.org/10.11576/glow-1263" class = "button-link">Paper</a>
+I delivered a presentation at <a ref="https://console34.github.io">ConSOLE34</a> on silent YEAR. <a href="https://dx.doi.org/10.5281/zenodo.18029061">Handout</a>
